@@ -1,15 +1,17 @@
-📄 Arquivo: README.md
+🛡️ RD - Painel VPN v1.0.0
 
-Esse arquivo vai na raiz do projeto: rd-painel-vpn-v1.0.0/README.md
-📥 Conteúdo completo do README.md:
-🛡️ RD - Painel VPN
+Sistema de gerenciamento de acessos VPN com autenticação, auditoria, exportação de relatórios e interface web moderna.
 
-Sistema de gerenciamento de acessos VPN com controle de usuários, auditoria, filtros salvos e exportação de relatórios.
+Desenvolvido para uso interno da equipe RD, com foco em segurança, rastreabilidade e facilidade de uso.
+📸 Captura de Tela
+
+ Em breve
+
 🚀 Funcionalidades
 
     Login com permissões por perfil (admin e suporte)
 
-    Cadastro, revogação e exclusão de usuários
+    Cadastro, recuperação e exclusão de usuários
 
     Painel com ações recentes e alertas
 
@@ -19,73 +21,82 @@ Sistema de gerenciamento de acessos VPN com controle de usuários, auditoria, fi
 
     Exportação em PDF/CSV
 
-    Instalação via script automatizado
+    Registro de conexões VPN com data/hora
 
-    Deploy via GitHub (futuramente)
+    Interface web com Vue.js + Vite
 
-📦 Requisitos
+    Backend em Python (Flask)
 
-    Ubuntu 20.04 ou superior
+    Banco de dados PostgreSQL
 
-    Python 3.8+
+    Instalação automatizada via install.sh
+
+🧱 Estrutura do Projeto
+
+rd-painel-vpn-v1.0.0/
+
+├── backend/ # API Flask + banco de dados
+
+├── frontend/ # Interface Vue.js
+
+├── docs/ # Documentação institucional
+
+├── dump.sql # Estrutura do banco de dados
+
+├── install.sh # Script de instalação automatizada
+
+└── README.md
+
+⚙️ Instalação Local
+Pré-requisitos
+
+    Python 3.10+
+
+    Node.js 18+
+
+    PostgreSQL 14+
 
     Git
 
-    SQLite (ou PostgreSQL, opcional)
-
-    Nginx (opcional para produção)
-
-🛠️ Instalação
+Passos
 bash
 Copiar
 
-# Clone o repositório (ou copie os arquivos)
-git clone https://github.com/rdinfra/painel-vpn.git
-cd painel-vpn
-
-# Torne o script executável
+git clone https://github.com/raonidore/rd-painel-vpn.git
+cd rd-painel-vpn
 chmod +x install.sh
+./install.sh
 
-# Execute a instalação
-sudo ./install.sh
+🌐 Acesso ao Sistema
 
-🔐 Acesso inicial
+Após a instalação, acesse:
 
-Usuário 	Senha 	Perfil
-admin@painelvpn.com 	admin123 	admin
-suporte@painelvpn.com 	suporte123 	suporte
-Exportar
-Copiar
-📁 Estrutura do projeto
+http://localhost:5173
 
-rd-painel-vpn/
+Usuário padrão: admin
 
-├── backend/
+Senha: admin123
+🛠️ Tecnologias Utilizadas
 
-├── frontend/
+    Python
 
-├── install.sh
+    Flask
 
-├── dump.sql
+    PostgreSQL
 
-├── .env.example
+    Vue.js
 
-├── docs/
+    Vite
 
-└── assets/
+    Git
 
-🧪 Testes e validação
-
-Após a instalação, ative o ambiente virtual e rode o backend:
-bash
-Copiar
-
-source venv/bin/activate
-python backend/app/main.py
-
-Acesse o sistema via navegador:
-
-http://localhost:8000 (ou porta configurada)
 📄 Licença
 
-MIT © RD Infra
+Este projeto é de uso interno da RD. Todos os direitos reservados.
+👨‍💻 Desenvolvido por
+
+Raoni Dore
+
+Engenheiro de Software • DevOps • Segurança da Informação
+
+github.com/raonidore
